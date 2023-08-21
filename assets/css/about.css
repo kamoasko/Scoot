@@ -84,6 +84,11 @@
 .accordion__top > i {
   color: var(--color-yellow);
   font-size: 1.6rem;
+  transition: 0.3s all ease-in-out;
+}
+
+.accordion.active i {
+  transform: rotate(180deg);
 }
 
 .accordion__content {

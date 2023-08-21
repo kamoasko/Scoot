@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Initialize accordion heights
   accordions.forEach((accordion) => {
-    accordion.style.overflow = "92px";
+    accordion.style.height = "92px";
   });
 
   accordions.forEach((accordion) => {
@@ -35,6 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
       } else {
         accordion.style.height = "92px";
       }
+      accordion.classList.toggle("active");
     });
   });
 });
