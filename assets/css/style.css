@@ -1,0 +1,132 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  /* 10/16*100%=62.5% --> 1rem=10px */
+  font-size: 62.5%;
+}
+
+:root {
+  --color-main: #495567;
+  --color-yellow: #fcb72b;
+  --color-light-yellow: #fff4df;
+  --color-white: #ffffff;
+  --color-grey: #939caa;
+  --color-light-grey: #e5ecf4;
+  --color-snow: #f2f5f9;
+
+  --container-width-lg: 111rem;
+
+  --main-font: "Lexend Deca", sans-serif, serif;
+  --secondary-font: "Space Mono", monospace, sans-serif, serif;
+}
+
+body {
+  font-family: var(--main-font);
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.5rem;
+  letter-spacing: 0.02em;
+
+  background-color: var(--color-white);
+  color: var(--color-grey);
+}
+
+h1 {
+  color: var(--color-main);
+  font-family: var(--secondary-font);
+  font-size: 5.6rem;
+  font-weight: 700;
+  line-height: 56px; /* 100% */
+  letter-spacing: -2.5px;
+}
+
+h2 {
+  color: var(--color-main);
+  font-family: var(--secondary-font);
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 4.8rem; /* 100% */
+  letter-spacing: -2.143px;
+}
+
+h3 {
+  color: var(--color-main);
+  font-family: var(--secondary-font);
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 4.8rem; /* 120% */
+  letter-spacing: -1.786px;
+}
+
+h4 {
+  color: var(--color-main);
+  font-family: var(--secondary-font);
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 2.8rem; /* 116.667% */
+  letter-spacing: -1.071px;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container-width-lg);
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+@media (max-width: 1110px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+    line-height: -1.786px;
+  }
+
+  h2 {
+    font-size: 2.1rem;
+  }
+
+  h3 {
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+  }
+
+  h4 {
+    font-size: 1.6rem;
+  }
+}
